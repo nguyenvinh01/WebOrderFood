@@ -46,9 +46,9 @@
         />
         <link
             rel="icon"
-            href="https://theme.hstatic.net/200000232135/1000682292/14/favicon.png?v=274"
+            href="http://localhost/WebOrderFood/fevicon1.ico"
         />
-        <link rel="icon" href="https://theme.hstatic.net/200000232135/1000682292/14/favicon.png?v=274">
+        <link rel="icon" href="http://localhost/WebOrderFood/fevicon1.ico">
 
         <link rel="stylesheet" href="public/css/bootstrap.min.css?v=<?php echo time(); ?>" >
         <link rel="stylesheet" href="public/css/elegant-icons.css?v=<?php echo time(); ?>" >
