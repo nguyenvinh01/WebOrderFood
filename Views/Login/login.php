@@ -18,8 +18,8 @@
                 <form class="login100-form validate-form" method="POST" action="?act=login&xuli=join">
                     
                     <span class="login100-form-title">
-                        <a href="?act=home"><img class="login-img" src="https://miraclestudio.design/html/deliciousa-html/assets/images/logo/logo.png" alt=""></a>
-                        <b>ĐĂNG NHẬP</b>
+                        <a href="?act=home"><img class="login-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgs3lHvCogtiBrh0B_HvY1PHbEaRc6hpp5gg&usqp=CAU" alt=""></a>
+                        <p>ĐĂNG NHẬP</p>
                     </span>
                     <!--=====FORM INPUT TÀI KHOẢN VÀ PASSWORD======-->
                     <?php if (isset($_COOKIE['msg1'])) { ?>
@@ -53,7 +53,10 @@
                             <a class="txt2" href="?act=register">
                                 Đăng ký tài khoản
                             </a>
-                            
+                        <div class="text-right p-t-12">
+                            <a class="txt2" href="?act=home">
+                                Trở Về
+                            </a>    
                         </div>
                     </form>
                     <!--=====FOOTER======-->

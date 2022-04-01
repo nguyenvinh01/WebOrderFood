@@ -21,12 +21,12 @@
 
     <ul class="icon">
         <li>
-            <a href="?act=cart&xuli=list"><i class="fas fa-cart-plus"></i></a>
+            <a href="?act=cart&xuli=list"><i class="fas fa-cart-plus" ></i></a>
         </li>
         <div class="action">
             <div class="profile" onclick="user_name();">
             <img
-                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                src="https://w7.pngwing.com/pngs/527/663/png-transparent-logo-person-user-person-icon-rectangle-photography-computer-wallpaper.png"
                 alt=""
                 style=""
             />

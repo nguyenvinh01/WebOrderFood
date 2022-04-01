@@ -1719,7 +1719,7 @@ img {
 .action .profile {
     border-radius: 50%;
     cursor: pointer;
-    height: 60px;
+    height: 25px;
     overflow: hidden;
     position: relative;
     width: 60px;

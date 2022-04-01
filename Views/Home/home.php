@@ -47,7 +47,7 @@
                              làm cho bát phở thêm ngon mắt
                             </p>
                         </div>
-                        <a href="#" class="btn">order now</a>
+                        <a href="?act=menu" class="btn">order now</a>
                     </div>
                     <!-- end item info -->
                     <!-- item image -->
@@ -71,7 +71,7 @@
                             Vốn là một hương vị Huế không lẫn vào đâu được và chính điều đó khiến người ăn cứ nhớ mãi về món ăn này.
                             </p>
                         </div>
-                        <a href="#" class="btn">order now</a>
+                        <a href="?act=menu" class="btn">order now</a>
                     </div>
                     <!-- end item info -->
                     <!-- item image -->

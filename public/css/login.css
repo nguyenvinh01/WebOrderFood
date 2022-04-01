@@ -201,10 +201,10 @@
 .login-img {
     display: block;
     width: 100px;
-    background-color: #000;
+  
     border-radius: 50%;
     margin: 0 auto;
-    padding: 6px;
+  
 }
 
 .container-login100-form-btn {

@@ -8,11 +8,13 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
-                    <img src="https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-anh-cute-de-thuong.jpg" alt="IMG">
+                    <img src="https://giaovienvietnam.vn/wp-content/uploads/2021/02/download.png" alt="IMG"
+                    style="width:200px;height:200px;"
+                    >
               </div>
                 <form class="login100-form validate-form" action="?act=register&xuli=join" method="POST">
                     <span class="login100-form-title">
-                        <b>ĐĂNG KÝ TÀI KHOẢN</b>
+                        <p>ĐĂNG KÝ TÀI KHOẢN</p>
                     </span>
                     <form method="POST" action="?act=register&xuli=join" >
                     <?php
