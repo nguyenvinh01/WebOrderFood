@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" style="background-color: #000;">
     <div class="logo">
         <img
             src="https://www.phenikaa.com/static/media/logo-en.7ff5d270.png"
@@ -6,7 +6,7 @@
             
         />
     </div>
-    <ul class="top-level-menu">
+    <ul class="top-level-menu" style="background-color: #000;">
         <li><a href="?act=home">Home</a></li>
         <li><a href="?act=about">About Us</a></li>
         <li>
@@ -21,12 +21,12 @@
 
     <ul class="icon">
         <li>
-            <a href="?act=cart&xuli=list"><i class="fas fa-cart-plus" ></i></a>
+            <a href="?act=cart&xuli=list"><i class="fa fa-cart-plus" style="color: white; font-size:20px;" ></i></a>
         </li>
         <div class="action">
-            <div class="profile" onclick="user_name();" style="width:30px; height:30px; border-radius: 0;">
+            <div class="profile" onclick="user_name();" style="border-radius: 0; top:18px; font-size:20px">
             <i class="fa fa-user"
-            style=" color: white"
+            style=" color: white; top:5px;"
             ></i>
             </div>
 
