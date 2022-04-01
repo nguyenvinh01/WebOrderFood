@@ -24,11 +24,12 @@
             <a href="?act=cart&xuli=list"><i class="fas fa-cart-plus" ></i></a>
         </li>
         <div class="action">
-            <div class="profile" onclick="user_name();">
+            <div class="profile" onclick="user_name();" style="width:30px; height:30px; border-radius: 0;">
             <img
-                src="https://w7.pngwing.com/pngs/527/663/png-transparent-logo-person-user-person-icon-rectangle-photography-computer-wallpaper.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/1200px-User_font_awesome.svg.png"
                 alt=""
-                style=""
+                style = "width:25px; height:25px;"
+                
             />
             </div>
 
