@@ -57,7 +57,7 @@
   <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
         <aside class="app-sidebar">
-            <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="public/images/hinhadmin.jpg" width="50px"
+            <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="public/images/hinhadmin.jpg" width="50px" 
                 alt="User Image">
                 <div>
       <p class="app-sidebar__user-name"><b>Chào <?= $_SESSION['login']['name']?> 
