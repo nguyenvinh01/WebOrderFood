@@ -8,8 +8,8 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
-                    <img src="https://giaovienvietnam.vn/wp-content/uploads/2021/02/download.png" alt="IMG"
-                    style="width:200px;height:200px;"
+                    <img src="c.png" alt="IMG"
+                    style="width:250px;height:200px;"
                     >
               </div>
                 <form class="login100-form validate-form" action="?act=register&xuli=join" method="POST">

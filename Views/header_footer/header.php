@@ -1,7 +1,7 @@
 <header class="header" style="background-color: #000;">
     <div class="logo">
         <img
-            src="http://localhost/WebOrderFood/a.png"
+            src="a.png"
             alt=""
          
             

@@ -68,7 +68,7 @@
         <ul class="app-menu">
             <li><a href="../?act=home" class="app-menu__item haha"><i class='app-menu__icon bx bx-cart-alt'></i>
                 <span class="app-menu__label">Trang mua hàng</span></a></li>
-            <li><a href="?act=admin" class="app-menu__item" href="index.html"><i class='app-menu__icon bx bx-tachometer'></i><span
+            <li><a  class="app-menu__item" href="index.html"><i class='app-menu__icon bx bx-tachometer'></i><span
                     class="app-menu__label">Trang chủ</span></a></li>
             <li><a class="app-menu__item " href="?act=controller&xuli=join"><i class='app-menu__icon bx bx-id-card'></i> <span
                     class="app-menu__label">Quản lý khách hàng</span></a></li>

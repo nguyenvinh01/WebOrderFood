@@ -2,9 +2,9 @@
     <div class="main_container">
         <div class="main_logo">
             <img
-                src="https://giaovienvietnam.vn/wp-content/uploads/2021/02/download.png"
+                src="c.png"
                 alt=""
-                style="width:200px;height:200px;"
+                style="width:250px;height:200px;"
             />
             
         </div>
