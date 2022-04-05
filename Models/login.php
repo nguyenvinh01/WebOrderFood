@@ -13,8 +13,10 @@
             if ($rs !== NULL) {
                 $_SESSION['valid'] = true;
                 $_SESSION['login'] = $rs;
+                 
                 header("location: ?act=home");
                 die();
+               
             } else {
                 header("location: ?act=login");
                 setcookie('msg', 'Tên tài khoản hoặc Email  đã tồn tại', time() + 2);

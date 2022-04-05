@@ -11,7 +11,7 @@
                 <img
                 src="c.png"
                 alt=""
-                style="width:250px;height:200px;"
+                style="width:250px;height:200px;top:50px;"
             />
                 </div>
                 <!--=====TIÊU ĐỀ======-->

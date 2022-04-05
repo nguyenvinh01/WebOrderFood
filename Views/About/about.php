@@ -96,7 +96,7 @@
                 </div>
             </div>
             <h2 class="openhouse_h2">
-            những điều chúng tôi thực hiện
+            Những điều chúng tôi thực hiện
         </h2>
         <div class="openhouse_container">
             <div class="openhouse_box">

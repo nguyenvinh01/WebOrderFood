@@ -1,5 +1,10 @@
 <?php 
     session_start();
+
+    if( !isset($_SESSION['login'] ) ){
+        header('location:../?act=home');
+
+    }
     $act = isset($_GET['act']) ? $_GET['act'] : 'admin';
     switch($act) {
         case 'admin':

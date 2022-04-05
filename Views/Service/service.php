@@ -6,7 +6,7 @@
     </section>
     <div class="gallery_tieude">
       <h2 class="gallery_h2">
-        bộ sưu tập hình ảnh
+        Bộ sưu tập hình ảnh
       </h2>
       <div class="gallery_nd">
       Mọi khoảnh khắc bạn hạnh phúc , chúng tôi đều muốn lưu giữ lại. Nó cũng là khoảnh khắc hạnh phúc của chúng tôi.

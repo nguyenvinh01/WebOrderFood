@@ -21,7 +21,7 @@ foreach($result as $row)
 {
  $output .= '
  <ul class="cmt-item">
-    <img class="cmt-img" src="https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-anh-cute-de-thuong.jpg" alt="">
+    <img class="cmt-img" src="https://cdn1.vectorstock.com/i/1000x1000/37/65/chat-box-talk-bubble-red-black-frame-vector-31113765.jpg" alt="">
     <div class="cmt-content">
         <h3 class="cmt-name">'.$row["name"].' <span class="cmt-date">'.$row["dateCreated"].'</span></h3>
         <p class="cmt-desc">'.$row["content"].'</p>
