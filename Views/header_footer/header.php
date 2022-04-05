@@ -1,11 +1,9 @@
 <header class="header" style="background-color: #000;">
     <div class="logo">
-        <img
-            src="a.png"
-            alt=""
-         
-            
-        />
+        <a href="?act=home">
+            <img src="a.png" alt=""/>
+
+        </a>
     </div>
     <ul class="top-level-menu" style="background-color: #000;">
         <li><a href="?act=home">Home</a></li>

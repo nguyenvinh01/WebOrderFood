@@ -39,7 +39,8 @@
                 $count += $value['ThanhTien'];
             }
 
-            header('Location: ?act=cart#dxd');
+            header('Location: ?act=menu');
+            // header('Location: ?act=cart#dxd');
         }
 
         function inc() {
