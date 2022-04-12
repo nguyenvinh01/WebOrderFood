@@ -47,6 +47,12 @@
                     </li>
                     <li>
                         <span class="material-icons icons-size"
+                            >card_giftcard</span
+                        >
+                        <a href="#">Đơn hàng</a>
+                    </li>
+                    <li>
+                        <span class="material-icons icons-size"
                             >account_balance_wallet</span
                         >
                         <a href="?act=logout">Đăng xuất</a>
