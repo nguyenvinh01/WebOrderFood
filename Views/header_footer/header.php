@@ -49,7 +49,7 @@
                         <span class="material-icons icons-size"
                             >card_giftcard</span
                         >
-                        <a href="#">Đơn hàng</a>
+                        <a href="?act=purchase">Đơn hàng</a>
                     </li>
                     <li>
                         <span class="material-icons icons-size"

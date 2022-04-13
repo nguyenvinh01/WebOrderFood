@@ -42,5 +42,8 @@
         case 'info':
             require_once("Information/Infor.php");
             break;
+        case 'purchase':
+            require_once("Purchase/purchaseList.php");
+            break;
     }
 ?>

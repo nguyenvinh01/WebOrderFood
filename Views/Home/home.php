@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-if( isset($_SESSION['login'] ) ){
-    echo '<script>alert("Đăng nhập thành công. Bấm ok để tiếp tục")</script>';
+// if( isset($_SESSION['login'] ) ){
+//     echo '<script>alert("Đăng nhập thành công. Bấm ok để tiếp tục")</script>';
 
 
-}
+// }
 ?>
 <section class="section" id="home">
     <div

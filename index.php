@@ -61,6 +61,21 @@
                     break;
             }
             break;
+        case 'purchase':
+            // $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+            require_once('Controller/PurchaseController.php');
+            $controller = new PurchaseController();
+            $controller->getAll();
+
+            // switch($act) {
+            //     case 'join':
+            //         $controller->getUser();
+            //         break;
+            //     default:
+            //         $controller->show();
+            //         break;
+            // }
+            break;
         case 'logout':
             require_once('Controller/LoginController.php');
             $controller = new LoginController();
