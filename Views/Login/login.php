@@ -27,7 +27,7 @@
 									<strong>Thông báo</strong> <?= $_COOKIE['msg1'] ?>
 								</div>
 							<?php } ?>
-                    <form action="submit" method="post">
+                    <!-- <form action="submit" method="post"> -->
                         <div class="wrap-input100 validate-input">
                             <input class="input100" type="text" placeholder="Tên tài khoản" name="username" id="username" required>
                             <span class="focus-input100"></span>
@@ -58,7 +58,7 @@
                                 Trở Về
                             </a>    
                         </div>
-                    </form>
+                    <!-- </form> -->
                     <!--=====FOOTER======-->
                     <div class="text-center p-t-70 txt2">
                         vhv <i class="far fa-copyright" aria-hidden="true"></i>

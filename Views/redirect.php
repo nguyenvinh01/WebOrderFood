@@ -43,7 +43,15 @@
             require_once("Information/Infor.php");
             break;
         case 'purchase':
-            require_once("Purchase/purchaseList.php");
-            break;
+            $mod = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+            switch($mod){
+                case 'list':
+                    require_once("Purchase/purchaseList.php");
+                    break;
+                default:
+                    require_once('Purchase/purchaseDetail.php');
+                    break;
+            }
+        // case 'puchaseDetail':
     }
 ?>
