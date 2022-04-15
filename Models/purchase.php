@@ -5,7 +5,7 @@
 
         function listPurchase() {
 
-            $queryDetail = "SELECT * FROM tbl_order;";
+            $queryDetail = "SELECT * FROM tbl_order ORDER BY order_id DESC ;";
             $rs = $this->conn->query($queryDetail);
             $data = array();
             while($row = $rs->fetch_assoc()) {

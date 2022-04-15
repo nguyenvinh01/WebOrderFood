@@ -7,70 +7,54 @@
     </section>
     <section class="shoping-cart spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="shoping__cart__table" style="align-items: center;">
-                        <table style="text-align: center;">
-                            <thead>
+                        <table style="text-align: center;"  class="table table-hover table-bordered" id="sampleTable">
+                        <thead>
                                 <tr>
-                                    <th></th>
+                                    <th>Mã Đơn Hàng</th>
+                                    <th>Giá Đơn Hàng</th>
+                                    <th>Tình Trạng</th>
+                                    <!-- <th>Giá tiền</th>
+                                   
+                                    <th>Chức năng</th> -->
                                 </tr>
                             </thead>
                             <?php foreach($allProduct as $p) { ?>
                                 <?php if($p['user_id']==$_SESSION['login']['user_id']){ ?>
-                                <tbody text-align: center;>         
-                                <tr style="text-align: center;">
-                                    <td class="shoping__cart__item" style="text-align: center;">Mã Đơn Hàng</td>
-                                    <td class="shoping__cart__item" style="text-align: center;">Giá</td>
-                                </tr>
-                                <tr style="text-align: center;">
-                                <div class="product__item__text">
-                                    <td class="shoping__cart__item" style="text-align: center;"> 
-                                        <!-- <th>Mã đơn hàng</th> -->
-                                        <h5> <?= $p['order_id'];?> </h5>
+                                <tbody text-align: center;>      
+                                    <td><?= $p['order_id'];?></td>   
+
+                                    <td class="shoping__cart__item" style="text-align: center;">
+                                        <h4><span class="badge bg-info"><?= number_format($p['order_total']);?> VND</span></h4>
                                     </td>
                                     <td class="shoping__cart__item" style="text-align: center;">
-                                        <!-- <th>Giá</th> -->
-                                        <h5><?= number_format($p['order_total']);?></h5>
+                                        <?php switch($p['order_status']){ 
+                                            case '1':
+                                                echo "<h4><span class=\"badge bg-primary\">Đơn hàng chưa xử lý</span></h4>";
+                                                break;
+                                            case '2':
+                                                echo "<h4><span class=\"badge bg-warning\">Đơn hàng đang xử lý</span></h4>";
+                                                break;
+                                            
+                                            case '3':
+                                                echo "<h4><span class=\"badge bg-success\">Đơn hàng đã xử lý</span></h4>";
+                                                break;
+                                            
+                                            default:
+                                                echo "<h4><span class=\"badge bg-danger\">Đơn hàng bị hủy</span></h4>";
+                                                break;
+
+                                            }?>
                                     </td>
                                     <td class="" style="width: 70px; height: 10px">
                                         <div class="" >
                                             <a href="?act=purchase&xuli=<?= $p['order_id'];?>" type="submit" value="Order" class="button-3">Chi tiết</a>
-                                            <!-- <a href="?act=detail&id=<?= $p['order_id'];?>" type="submit" value="Order" class="button-3">Chi tiết</a> -->
                                         </div>
 
-                                    </td>
-                                </div>
-                                    
-                                </tr>
+                                    </td>                                   
+                    
                             </tbody>
                             <?php }}?>
                         </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- <div class="col-lg-12">
-                    <div class="shoping__cart__btns">
-                        <a href="?act=menu" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-                    </div>
-                </div> -->
-                
-                <!-- <div class="col-lg-6">
-                    <div class="shoping__checkout">
-                        <h5>Cart Total</h5>
-                        <ul>
-                            <?php
-                                $count = 0;
-                                foreach ($_SESSION['cartb'] as $value) {
-                                    $count += $value['ThanhTien'];
-                                }
-                            ?>
-                            <li>Total <span><?= number_format($count) ?> đ</span></li>
-                        </ul>
-                        <a href="?act=checkout&xuli=show" class="primary-btn">PROCEED TO CHECKOUT</a>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>

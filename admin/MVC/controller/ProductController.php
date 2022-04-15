@@ -64,7 +64,7 @@
         }
         public function delete()
         {
-            $id = $_POST['id'];
+            $id = $_GET['id'];
             $data =  $this->product_model->delete($id);
             require_once('MVC/Views/product/list_product.php');
         }

@@ -18,7 +18,7 @@
                 let massPopChart = new Chart(myChart, {
                     type: 'line',
                     data: {
-                        labels: [<?php foreach($lines as $line) { echo $line['year'].',';} ?>],
+                        labels: [<?php foreach($lines as $line) { echo $line['day'].',';} ?>],
                         datasets: [
                             {
                                 data: [<?php foreach($lines as $line) { echo $line['money_earned'].',';} ?>],

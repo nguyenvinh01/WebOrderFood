@@ -74,7 +74,7 @@ class product extends Model
     }
     function delete($id)
     {
-        $query = "DELETE from tbl_product where product_id = $id";
+        $query = "DELETE from tbl_product where product_id = $id;";
         
         $status = $this->conn->query($query);
         if ($status == true) {

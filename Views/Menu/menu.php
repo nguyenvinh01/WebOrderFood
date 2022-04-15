@@ -45,6 +45,18 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-7">
+                            <div class="input-group rounded">
+                            <input type="search" id= "search" class="form-control rounded col-lg-4 col-md-7" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <span class="input-group-text border-0" id="search-addon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            </div>
+                        <table class="table table-hover">
+
+                            <tbody id="output">
+                                
+                            </tbody>
+                        </table>
                         <div class="filter__item">
                             <div class="row">
                                 <div class="col-lg-4 col-md-5">
@@ -78,3 +90,19 @@
 </div>
         </section>
         
+        <script type="text/javascript">
+  $(document).ready(function(){
+    $("#search").keypress(function(){
+      $.ajax({
+        type:'POST',
+        url:'search.php',
+        data:{
+          name:$("#search").val(),
+        },
+        success:function(data){
+          $("#output").html(data);
+        }
+      });
+    });
+  });
+</script>

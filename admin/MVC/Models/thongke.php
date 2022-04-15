@@ -42,10 +42,10 @@ class thongke extends Model
 
     function getLine() {
         $sql = "SELECT
-            DISTINCT year(created_at) AS year,
+            DISTINCT month(created_at) AS day,
             SUM(order_total) AS money_earned
         FROM tbl_order
-        GROUP BY year";
+        GROUP BY day";
         $rs = $this->conn->query($sql);
         $data = array();
         while($row = $rs->fetch_assoc()) {

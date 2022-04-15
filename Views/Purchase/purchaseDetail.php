@@ -7,51 +7,48 @@
     </section>
     <section class="shoping-cart spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="shoping__cart__table">
-                        <table>
-                            <thead>
+                        <table style="text-align: center;"  class="table table-hover table-bordered" id="sampleTable">
+                        <thead>
                                 <tr>
-                                    <td><h5></h5></td>
-                                    <td><h5></h5></td>
-                                    <td><h5></h5></td>
+                                    <th></th>
+                                    <th>Mã Sản Phẩm</th>
+                                    <th>Số Lượng</th>
+                                    <th>Món Ăn</th>
+                                    <th>Đơn Giá</th>
+
                                 </tr>
                             </thead>
-
                             <?php foreach($purchaseDetails as $d){ ?>
 
-                            <tbody>
-                                    <tr>
-                                        <td class="shoping__cart__item">
-                                            <h5></h5><?= $d['product_id'];?></h5>
-                                        </td>
-                                        <td class="shoping__cart__item">
-                                            <h5><?= $d['product_num'];?></h5>
+                                <tbody>
+                                        
+                                            <td class="shoping__cart__item" style="">
+                                                <img src="<?php echo $d['product_image'];?>" alt="">
+                                            </td>
+                                            <td class="shoping__cart__item">
+                                                <h5></h5><?= $d['product_id'];?></h5>
+                                            </td>
+                                            <td class="shoping__cart__item">
+                                                <h5><?= $d['product_num'];?></h5>
 
-                                        </td>
-                                        <td class="shoping__cart__item">
-                                            <h5><?= $d['product_name'];?></h5>
+                                            </td>
+                                            <td class="shoping__cart__item">
+                                                <h5><?= $d['product_name'];?></h5>
 
-                                        </td>
-                                        <td class="shoping__cart__total">
-                                            <?= number_format($d['product_price']) ?>
-                                        </td>
-                                        <td class="shoping__cart__item">
-                                            <img src="<?php echo $d['product_image'];?>" alt="">
-                                        </td>
-
-                                    </tr>
-                            </tbody>
+                                            </td>
+                                            <td class="shoping__cart__total">
+                                                <h4><span class="badge bg-info"><?= number_format($d['product_price']) ?></span></h4>
+                                            </td>
+                                </tbody>
                             <?php } ?>
-
                         </table>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-    
 
     
 
+    
+
+<!-- HTML !-->
+<!-- <button class="button-3" role="button">Button 3</button> -->

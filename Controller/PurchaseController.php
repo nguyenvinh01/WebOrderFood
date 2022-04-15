@@ -14,9 +14,6 @@
             $id = $_GET['xuli'];
             $purchaseDetails = $this->purchase_model->see($id);
             require_once('Views/index.php');
-            
-            // require_once('MVC/index.php');
-            //require_once("MVC/Views/authors/edit.php");
         }
     }
 ?>
