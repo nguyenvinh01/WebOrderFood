@@ -11,7 +11,7 @@
         }
         public function see_info()
         {
-            $id =$_GET['xuli'];
+            $id = $_GET['xuli'];
             $purchaseDetails = $this->purchase_model->see($id);
             require_once('Views/index.php');
             

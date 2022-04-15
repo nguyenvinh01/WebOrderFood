@@ -13,9 +13,9 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td><h5>Products</h5></td>
-                                    <td><h5>Price</h5></td>
-                                    <td><h5>Total</h5></td>
+                                    <td><h5></h5></td>
+                                    <td><h5></h5></td>
+                                    <td><h5></h5></td>
                                 </tr>
                             </thead>
 
@@ -24,10 +24,14 @@
                             <tbody>
                                     <tr>
                                         <td class="shoping__cart__item">
-                                            <h5></h5><?= $d['order_id'];?></h5>
+                                            <h5></h5><?= $d['product_id'];?></h5>
                                         </td>
                                         <td class="shoping__cart__item">
                                             <h5><?= $d['product_num'];?></h5>
+
+                                        </td>
+                                        <td class="shoping__cart__item">
+                                            <h5><?= $d['product_name'];?></h5>
 
                                         </td>
                                         <td class="shoping__cart__total">
