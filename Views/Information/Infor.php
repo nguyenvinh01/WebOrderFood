@@ -1,5 +1,12 @@
 
-   
+<?php 
+// session_start();
+if(!isset($_SESSION['login'])){
+    header("location: ../?act=home");
+}
+
+?>
+
     <section class="home">
         <div class="home_hinhnen">
             
