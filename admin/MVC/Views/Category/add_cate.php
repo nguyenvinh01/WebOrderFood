@@ -12,10 +12,10 @@
                 <label class="control-label">Tên sản phẩm</label>
                 <input class="form-control" name="TenDm" type="text">
               </div>
-              <div class="form-group col-md-3">
+              <!-- <div class="form-group col-md-3">
                 <label class="control-label">Id</label>
                 <input class="form-control"  name="id" type="text">
-              </div>
+              </div> -->
              
               <!-- <div class="form-group col-md-8">
                 <label class="control-label">URL hình ảnh</label>

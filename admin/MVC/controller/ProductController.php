@@ -74,8 +74,8 @@
         function cate(){
             $category_name = $_POST['TenDm'];
             $category_desc = $_POST['mota'];
-            $id = $_POST['id'];
-            $this->product_model->add_cate($category_name,$category_desc,$id);
+            // $id = $_POST['id'];
+            $this->product_model->add_cate($category_name,$category_desc);
         }
     }
 ?>

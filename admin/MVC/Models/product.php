@@ -94,7 +94,7 @@ class product extends Model
         }
         return $data;
     }
-    function add_cate($data1,$data,$id){
+    function add_cate($data1,$data){
         // $f = "";
         // $v = "";
         // foreach ($data as $key => $value) {
@@ -103,8 +103,8 @@ class product extends Model
         // }
         // $f = trim($f, ",");
         // $v = trim($v, ",");
-        $cid = intval($id);
-        $query = "INSERT INTO tbl_category_product (category_id, category_name, category_desc) VALUES ($cid,'$data1','$data');";
+        // $cid = intval($id);
+        $query = "INSERT INTO tbl_category_product (category_name, category_desc) VALUES ('$data1','$data');";
 
         $status = $this->conn->query($query);
         if ($status == true) {
