@@ -70,7 +70,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">EMAIL</p>
+                <p class="mb-0">Email</p>
               </div>
               <div class="col-sm-9">
               <input class="form-control" type="text" name="" value="<?= $data['user_email'] ?>">
@@ -87,6 +87,8 @@
             </div>
           </div>
         </div>
+        <button class="btn btn-save" type="submit">Lưu lại</button>
+        <a class="btn btn-cancel" href="#">Hủy bỏ</a>
         </form>
         <style>
           .row{
