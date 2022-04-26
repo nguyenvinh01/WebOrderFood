@@ -22,6 +22,10 @@
                     break;
                 case 'see':
                     $controller->see_info();
+                    break;
+                case 'update':
+                    $controller->update();
+                    break;
                 default:
                     $controller->controller();
                     break;

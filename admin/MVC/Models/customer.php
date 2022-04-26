@@ -21,15 +21,11 @@ class customer extends Model
        }
       
        
-        function update_account($data)
-        {
-            $v = "";
-            foreach ($data as $key => $value) {
-                $v .= $key . "='" . $value . "',";
-            }
-            $v = trim($v, ",");
-    
-            $query = "UPDATE tbl_user SET  $v   WHERE  user_id = " . $_SESSION['login']['user_id'];
+        function update_account($data1,$data2,$data3,$data4,$data5)
+        {   
+            $id= intval($_SESSION['login']['user_id']);
+            $query = "UPDATE tbl_user SET  name='$data1', user_sex='$data2', user_tel='$data3',user_email='$data4',user_address='$data5'  
+            WHERE  user_id =$id; ";
     
             $result = $this->conn->query($query);
             

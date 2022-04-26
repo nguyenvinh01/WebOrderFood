@@ -115,6 +115,10 @@ if(!isset($_SESSION['login'])){
                     case 'see':
                         require_once('MVC/Views/customer/see_customer.php');
                         break;
+                    case 'update':
+                        $controller->update();
+                            break;
+                    
                     }
                     break;
             case 'banner':

@@ -29,7 +29,7 @@
         <div class="title-form">
           <h1>THÔNG TIN CÁ NHÂN</h1>
         </div>
-<form class="student-form" action="?act=info&xuli=update" method="post">
+<form class="student-form" action="?act=controllerinfo&xuli=update" method="post">
       <div class="col-lg-8">
         <div class="card mb-4">
           <div class="card-body">
