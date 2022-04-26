@@ -4,7 +4,7 @@
       <strong>Thông báo</strong> <?= $_COOKIE['msg'] ?>
     </div>
   <?php } ?>
-<form class="row" action="?act=category&xuli=addcate" method="POST">
+<form class="row" action="?act=category&xuli=add" method="POST">
               <!-- <div class="form-group col-md-3">
                 <label for="exampleSelect1" class="control-label">Danh mục</label>
               </div> -->

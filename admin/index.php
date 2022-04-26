@@ -112,9 +112,6 @@
                 case 'delete':
                     $controller->delete();
                     break;
-                case 'addcate':
-                    $controller->cate();
-                    break;
                 default:
                     $controller->home();
                     break;
@@ -122,18 +119,19 @@
             break;
             case 'category':
                 $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
-                require_once('MVC/controller/ProductController.php');
-                $controller = new ProductController();
+                require_once('MVC/controller/CategoryController.php');
+                $controller = new CategoryController();
                 switch($act) {
-                    case 'add':
-                        $controller->add();
+                    case 'show':
+                        $controller->list();
                         break;
-                    case 'addcate':
+                    case 'add':
                         $controller->cate();
                         break;
-                    default:
-                        $controller->home();
-                        break;
+                    // case 'addcate':
+                    //     require_once('MVC/Views/Category/add_cate.php');
+                    //     break;
+                    
                     }  
                 break;
         default:

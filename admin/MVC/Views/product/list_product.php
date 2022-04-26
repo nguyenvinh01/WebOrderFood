@@ -15,10 +15,10 @@
                               <a class="btn btn-add btn-sm" href="?act=product&xuli=add" title="Thêm"><i class="fas fa-plus"></i>
                                 Tạo mới sản phẩm</a>
                             </div>
-                            <div class="col-sm-2">
+                            <!-- <div class="col-sm-2">
                               <a class="btn btn-add btn-sm" href="?act=category&xuli=add" title="Thêm DM"><i class="fas fa-plus"></i>
                                 Tạo danh mục mới</a>
-                            </div>
+                            </div> -->
                             <!-- <div class="col-sm-2">
                               <a class="btn btn-excel btn-sm" href="" title="In"><i class="fas fa-file-excel"></i> Xuất Excel</a>
                             </div>

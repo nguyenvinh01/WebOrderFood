@@ -79,8 +79,8 @@ if(!isset($_SESSION['login'])){
         <ul class="app-menu">
             <li><a href="../?act=home" class="app-menu__item haha"><i class='app-menu__icon bx bx-cart-alt'></i>
                 <span class="app-menu__label">Trang mua hàng</span></a></li>
-            <li><a  class="app-menu__item" href="index.html"><i class='app-menu__icon bx bx-tachometer'></i><span
-                    class="app-menu__label">Trang chủ</span></a></li>
+            <li><a  class="app-menu__item" href="?act=category&xuli=show"><i class='app-menu__icon bx bx-tachometer'></i><span
+                    class="app-menu__label">Quản lý danh mục</span></a></li>
             <li><a class="app-menu__item " href="?act=controller&xuli=join"><i class='app-menu__icon bx bx-id-card'></i> <span
                     class="app-menu__label">Quản lý khách hàng</span></a></li>
             
@@ -183,37 +183,26 @@ if(!isset($_SESSION['login'])){
                     case 'edit':
                         $controller->update();
                         break;
-                    case 'cate':
-                        require_once('MVC/Views/product/add_cate.php');
-                        break;
+
                     case 'delete':
                         $controller->delete();
                         break;
                     }  
                 break;
-                case 'category':
-                    $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
-                    switch($act) {
-                        case 'add':
-                            require_once('MVC/Views/Category/add_cate.php');
-                            break;
-                        // case 'store':
-                        //     $controller->store();
-                        //     break;
-                        // case 'update':
-                        //     require_once('MVC/Views/product/edit.php');
-                        //     break;
-                        // case 'edit':
-                        //     $controller->update();
-                        //     break;
-                        // case 'cate':
-                        //     require_once('MVC/Views/product/add_cate.php');
-                        //     break;
-                        // case 'delete':
-                        //     $controller->delete();
-                        //     break;
-                        }  
-                    break;
+            case 'category':
+                $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+                switch($act) {
+                    case 'addcate':
+                        require_once('MVC/Views/Category/add_cate.php');
+                        break;
+                    case 'show':
+                        require_once('MVC/Views/Category/cate_list.php');
+                        break;
+                    // case 'add':
+                    //     $controller->cate();
+                    //     break;
+                    }  
+                break;
             default:
                 require_once('MVC/Views/Home/home.php');
         }
