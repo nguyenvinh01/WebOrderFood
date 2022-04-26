@@ -47,7 +47,7 @@
                                     </td>
                                     <td class="" style="width: 70px; height: 10px">
                                         <div class="" >
-                                            <a href="?act=purchase&xuli=<?= $p['order_id'];?>" type="submit" value="Order" class="button-3">Chi tiết</a>
+                                            <a href="?act=purchase&xuli=<?= $p['order_id'];?>" name= ""type="submit" value="" class="button-3">Chi tiết</a>
                                         </div>
 
                                     </td>                                   

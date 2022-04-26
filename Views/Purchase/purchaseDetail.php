@@ -5,6 +5,7 @@
         </div>
         
     </section>
+    <?php ?>
     <section class="shoping-cart spad">
         <div class="container">
                         <table style="text-align: center;"  class="table table-hover table-bordered" id="sampleTable">
@@ -19,6 +20,7 @@
                                 </tr>
                             </thead>
                             <?php foreach($purchaseDetails as $d){ ?>
+                                <?php if($d['user_id']==$_SESSION['login']['user_id']){ ?>
 
                                 <tbody>
                                         
@@ -40,7 +42,8 @@
                                                 <h4><span class="badge bg-info"><?= number_format($d['product_price']) ?></span></h4>
                                             </td>
                                 </tbody>
-                            <?php } ?>
+                            <?php }} ?>
+
                         </table>
             </div>
         </div>

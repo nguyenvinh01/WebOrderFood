@@ -183,12 +183,37 @@ if(!isset($_SESSION['login'])){
                     case 'edit':
                         $controller->update();
                         break;
+                    case 'cate':
+                        require_once('MVC/Views/product/add_cate.php');
+                        break;
                     case 'delete':
                         $controller->delete();
                         break;
                     }  
-            
                 break;
+                case 'category':
+                    $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+                    switch($act) {
+                        case 'add':
+                            require_once('MVC/Views/Category/add_cate.php');
+                            break;
+                        // case 'store':
+                        //     $controller->store();
+                        //     break;
+                        // case 'update':
+                        //     require_once('MVC/Views/product/edit.php');
+                        //     break;
+                        // case 'edit':
+                        //     $controller->update();
+                        //     break;
+                        // case 'cate':
+                        //     require_once('MVC/Views/product/add_cate.php');
+                        //     break;
+                        // case 'delete':
+                        //     $controller->delete();
+                        //     break;
+                        }  
+                    break;
             default:
                 require_once('MVC/Views/Home/home.php');
         }

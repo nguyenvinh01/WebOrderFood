@@ -71,5 +71,11 @@
         function home() {
             require_once('MVC/Views/product/list_product.php');
         }
+        function cate(){
+            $category_name = $_POST['TenDm'];
+            $category_desc = $_POST['mota'];
+            $id = $_POST['id'];
+            $this->product_model->add_cate($category_name,$category_desc,$id);
+        }
     }
 ?>

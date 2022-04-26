@@ -58,25 +58,25 @@
                     break;
                 }
                 break;
-        case 'banner':
-            $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
-            require_once('MVC/controller/BannerController.php');
-            $controller = new BannerController(); 
-            switch($act) {
-                case 'show':
-                    $controller->list();
-                    break;
-                case 'add':
-                    $controller->add();
-                    break;
-                case 'addsubmit':
-                    $controller->submit();
-                    break;
-                default:
-                    $controller->list();
-                    break;
-                }
-                break;
+        // case 'banner':
+        //     $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+        //     require_once('MVC/controller/BannerController.php');
+        //     $controller = new BannerController(); 
+        //     switch($act) {
+        //         case 'show':
+        //             $controller->list();
+        //             break;
+        //         case 'add':
+        //             $controller->add();
+        //             break;
+        //         case 'addsubmit':
+        //             $controller->submit();
+        //             break;
+        //         default:
+        //             $controller->list();
+        //             break;
+        //         }
+        //         break;
         case 'tk':
             $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
                  require_once('MVC/controller/ThongkeController.php');
@@ -112,12 +112,30 @@
                 case 'delete':
                     $controller->delete();
                     break;
+                case 'addcate':
+                    $controller->cate();
+                    break;
                 default:
-                $controller->home();
+                    $controller->home();
                     break;
                 }  
-        
             break;
+            case 'category':
+                $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+                require_once('MVC/controller/ProductController.php');
+                $controller = new ProductController();
+                switch($act) {
+                    case 'add':
+                        $controller->add();
+                        break;
+                    case 'addcate':
+                        $controller->cate();
+                        break;
+                    default:
+                        $controller->home();
+                        break;
+                    }  
+                break;
         default:
             require_once('MVC/controller/HomeController.php');
                 $controller = new HomeController();
