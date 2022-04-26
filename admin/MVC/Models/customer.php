@@ -2,22 +2,46 @@
 require_once("model.php");
 class customer extends Model
 {
-    var $table = "tbl_user";
-    var $contens = "user_id";
-    function list_custom(){
+      var $table = "tbl_user";
+       var $contens = "user_id";
+       function list_custom(){
        
-        $sql = 'SELECT * FROM tbl_user  ';
+           $sql = 'SELECT * FROM tbl_user  ';
         $rs = $this->conn->query($sql);
-        $data = array();
-        while($row = $rs->fetch_assoc()) {
-            $data[] = $row;
+           $data = array();
+           while($row = $rs->fetch_assoc()) {
+              $data[] = $row;
+          }
+           return $data;
+       }
+      function see($id)
+       {
+          $query = "select * from $this->table where $this->contens =$id";
+           return $this->conn->query($query)->fetch_assoc();
+       }
+      
+       
+        function update_account($data)
+        {
+            $v = "";
+            foreach ($data as $key => $value) {
+                $v .= $key . "='" . $value . "',";
+            }
+            $v = trim($v, ",");
+    
+            $query = "UPDATE tbl_user SET  $v   WHERE  user_id = " . $_SESSION['login']['user_id'];
+    
+            $result = $this->conn->query($query);
+            
+            if ($result == true) {
+                setcookie('doimk', 'Cập nhật tài khoản thành công', time() + 2);
+                header("location: ?act=home");
+            } else {
+                setcookie('doimk', 'Mật khẩu xác nhận không đúng', time() + 2);
+                header("location: ?act=info");
+            }
         }
-        return $data;
-    }
-    function see($id)
-    {
-        $query = "select * from $this->table where $this->contens =$id";
-        return $this->conn->query($query)->fetch_assoc();
-    }
-}
+   
+} 
+
 ?>

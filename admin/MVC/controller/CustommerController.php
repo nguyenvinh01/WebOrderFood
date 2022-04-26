@@ -24,6 +24,25 @@ class CustommerController {
     function controller() {
         require_once('MVC/index.php');
     }
+    function update(){
+        if (isset($_POST['submit'])) {
+            $data = array(
+                'name' =>    $_POST['firstname'],
+                'user_sex' => $_POST['GioiTinh'],
+                'user_tel' => $_POST['SDT'],
+                'user_email' =>    $_POST['mail'],
+                'user_address'  =>   $_POST['course'],
+            );
+            foreach ($data as $key => $value) {
+                if (strpos($value, "'") != false) {
+                    $value = str_replace("'", "\'", $value);
+                    $data[$key] = $value;
+                }
+            }
+            $this->info_model->update_account($data);
+        }
+        header('location: ?act=info&xuli=update');
+    }
 }
 
 ?>
