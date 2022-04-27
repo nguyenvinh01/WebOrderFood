@@ -21,27 +21,24 @@
                                 <tr>
                                     <th>Mã Danh Mục</th>
                                     <th>Tên sản phẩm</th>
-                                    <!-- <th>Tên sản phẩm</th>
-                                    <th>Tình trạng</th>
-                                    <th>Giá tiền</th>
-                                   
-                                    <th>Chức năng</th> -->
+                                     <th>Tên sản phẩm</th>
+                                   <!-- <th>Tình trạng</th>-->
+
                                 </tr>
                             </thead>
                             <tbody>
                             <?php foreach($data_cate as $cus) {?>
                 <tr>
-                    <td><?= $cus['category_id'];?></td>
+                    <td class="col-md-1"><?= $cus['category_id'];?></td>
 
                     <td><?= $cus['category_name'];?></td>
-       
-          
-                <!-- <td>
-                     <a href="?act=product&xuli=delete&id=<?= $cus['category_id'] ?>" onclick="return confirm('Bạn có thật sự muốn xóa ?');"
+                    <td class="col-md-6"><?= $cus['category_desc'];?></td>
+                    <td>
+                     <a href="?act=category&xuli=delete&id=<?= $cus['category_id'] ?>" onclick="return confirm('Bạn có thật sự muốn xóa ?');"
                       type="button" ><i class="fas fa-trash-alt"></i></a>
-                  <a class="" href="?act=product&xuli=update&id=<?= $cus['category_id'] ?>" 
+                  <a class="" href="?act=category&xuli=update&id=<?= $cus['category_id'] ?>" 
                       data-target="#ModalUP"><i class="fas fa-edit" ></i></a>
-                       </td> -->
+                       </td>
                         </tr>
                 <?php }?>
                             </tbody>

@@ -132,10 +132,18 @@
                     case 'add':
                         $controller->cate();
                         break;
-                    // case 'addcate':
-                    //     require_once('MVC/Views/Category/add_cate.php');
-                    //     break;
-                    
+                    case 'addcate':
+                        $controller->addcate();
+                        break;
+                    case 'update':
+                        $controller->edit();
+                        break;
+                    case 'edit':
+                        $controller->update();
+                        break;
+                    case 'delete':
+                        $controller->delete();
+                        break;
                     }  
                 break;
         default:

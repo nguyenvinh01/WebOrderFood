@@ -202,9 +202,18 @@ if(!isset($_SESSION['login'])){
                     case 'show':
                         require_once('MVC/Views/Category/cate_list.php');
                         break;
-                    // case 'add':
-                    //     $controller->cate();
-                    //     break;
+                    case 'add':
+                        $controller->cate();
+                        break;
+                    case 'edit':
+                        $controller->update();
+                        break;
+                    case 'update':
+                        require_once('MVC/Views/Category/edit_cate.php');
+                        break;
+                    case 'delete':
+                        $controller->delete();
+                        break;
                     }  
                 break;
             default:

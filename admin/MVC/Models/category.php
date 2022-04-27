@@ -25,4 +25,42 @@ class category extends Model
         }
         return $data;
     }
+
+    function update($id,$data)
+    {
+        $v = "";
+        foreach ($data as $key => $value) {
+            $v .= $key . "='" . $value . "',";
+        }
+        $v = trim($v, ",");
+
+
+        $query = "UPDATE $this->table SET  $v   WHERE $this->contens = $id";
+
+        $result = $this->conn->query($query);
+        
+        if ($result == true) {
+            header("location: ?act=product&xuli=join");
+        } else {
+            setcookie('msg', 'Update vào không thành công', time() + 2);
+            header("location: ?act=category&xuli=update");
+        }
+    }
+    function find($id)
+    {
+        $query = "select * from $this->table where $this->contens =$id";
+        return $this->conn->query($query)->fetch_assoc();
+    }
+    function delete($id)
+    {
+        $query = "DELETE from tbl_category_product where category_id = $id;";
+        
+        $status = $this->conn->query($query);
+        if ($status == true) {
+            setcookie('msg', 'Xóa thành công', time() + 2);
+        } else {
+            setcookie('msg', 'Xóa không thành công', time() + 2);
+        }
+        header("location: ?act=category&xuli=show");
+    }
 }
