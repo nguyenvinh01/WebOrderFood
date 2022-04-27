@@ -68,7 +68,7 @@ if(!isset($_SESSION['login'])){
   <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
         <aside class="app-sidebar">
-            <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="public/images/hinhadmin.jpg" width="50px" 
+            <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="a.png" width="50px" 
                 alt="User Image">
                 <div>
       <p class="app-sidebar__user-name"><b>Chào <?= $_SESSION['login']['name']?> 
@@ -80,13 +80,14 @@ if(!isset($_SESSION['login'])){
             <li><a href="../?act=home" class="app-menu__item haha"><i class='app-menu__icon bx bx-cart-alt'></i>
                 <span class="app-menu__label">Trang mua hàng</span></a></li>
             <li><a  class="app-menu__item" href="?act=category&xuli=show"><i class='app-menu__icon bx bx-tachometer'></i><span
-                    class="app-menu__label">Quản lý danh mục</span></a></li>
-            <li><a class="app-menu__item " href="?act=controller&xuli=join"><i class='app-menu__icon bx bx-id-card'></i> <span
-                    class="app-menu__label">Quản lý khách hàng</span></a></li>
+            class="app-menu__label">Quản lý danh mục</span></a></li>
             
             <li><a class="app-menu__item" href="?act=product&xuli=join"><i
                     class='app-menu__icon bx bx-purchase-tag-alt'></i><span class="app-menu__label">Quản lý món ăn</span></a>
             </li>
+            <li><a class="app-menu__item " href="?act=controller&xuli=join"><i class='app-menu__icon bx bx-id-card'></i> <span
+                    class="app-menu__label">Quản lý khách hàng</span></a></li>
+            
             <li><a class="app-menu__item" href="?act=order"><i class='app-menu__icon bx bx-task'></i><span
                     class="app-menu__label">Quản lý đơn hàng</span></a></li>
             
@@ -117,7 +118,7 @@ if(!isset($_SESSION['login'])){
                         break;
                     case 'update':
                         $controller->update();
-                         break;
+                     break;
                     
                     
                     }

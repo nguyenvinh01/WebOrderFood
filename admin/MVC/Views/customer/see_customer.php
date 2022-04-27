@@ -87,6 +87,21 @@
               <input class="form-control" type="text" name="course" value="<?= $data['user_address'] ?>">
               </div>
             </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Role</p>
+              </div>
+            <div class="col-sm-9">
+              <div class="field-form">
+											
+                      <select class="form-control" name="role'" title="role">
+                        <option <?= ($data['role_id'] == '1') ? 'selected' : '' ?> value="1"> Admin</option>
+                        <option <?= ($data['role_id'] == '2') ? 'selected' : '' ?> value="2"> User</option>
+                        
+                      </select>
+                
+    </div>
           </div>
         </div>
         <button class="btn btn-save" type="submit" name ="submit" method="post">Lưu lại</button>
