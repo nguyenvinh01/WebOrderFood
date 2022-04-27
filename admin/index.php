@@ -24,8 +24,11 @@
                     $controller->see_info();
                     break;
                 case 'update':
-                    $controller->update();
-                    break;
+                        $controller->edit();
+                        break;
+                case 'edit':
+                        $controller->update();
+                        break;
                 default:
                     $controller->controller();
                     break;

@@ -116,7 +116,10 @@ if(!isset($_SESSION['login'])){
                         require_once('MVC/Views/customer/see_customer.php');
                         break;
                     case 'update':
-                        $controller->update();
+                            $controller->edit();
+                            break;
+                    case 'edit':
+                            $controller->update();
                             break;
                     
                     }
