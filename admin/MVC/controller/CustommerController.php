@@ -42,8 +42,11 @@ class CustommerController {
         {
             $id = $_POST['id'];
             $data = array(
-                'category_name'  => $_POST['TenDm'],
-                'category_desc' =>  $_POST['mota'],
+                'name' =>    $_POST['firstname'],
+                'user_sex' => $_POST['GioiTinh'],
+                'user_tel' => $_POST['SDT'],
+                'user_email' =>    $_POST['mail'],
+                'user_address'  =>   $_POST['course'],
             );
             foreach ($data as $key => $value) {
                 if (strpos($value, "'") != false) {
@@ -54,12 +57,7 @@ class CustommerController {
             $this->cus_control->update($id,$data);
             
         }
-        public function edit()
-        {
-            $id = isset($_GET['id']) ? $_GET['id'] : 1;
-            $data = $this->cus_control->find($id);
-            require_once('MVC/index.php');
-        }
+       
 }
 
 ?>

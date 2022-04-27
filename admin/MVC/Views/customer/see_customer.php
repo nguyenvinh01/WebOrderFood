@@ -29,7 +29,7 @@
         <div class="title-form">
           <h1>THÔNG TIN CÁ NHÂN</h1>
         </div>
-<form class="student-form" action="?act=controllerinfo&xuli=update" method="post">
+<form class="student-form" action="?act=controller&xuli=update" method="post">
       <div class="col-lg-8">
         <div class="card mb-4">
           <div class="card-body">
@@ -39,6 +39,8 @@
               </div>
               <div class="col-sm-9">
               <input class="form-control" type="text" name="firstname" value="<?= $data['name'] ?>">
+              <input class="form-control" type="hidden" name="id" value="<?=$data['user_id']?>">
+
               </div>
             </div>
             <hr>
