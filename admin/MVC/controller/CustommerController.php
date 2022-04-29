@@ -24,43 +24,49 @@ class CustommerController {
     function controller() {
         require_once('MVC/index.php');
     }
- //function update(){
-   //     if (isset($_POST['submit'])) {
-   //         
-   //             $name =$_POST['firstname'];
-  //              $user_sex =$_POST['GioiTinh'];
-  //              $user_tel =$_POST['SDT'];
-  //              $user_email =$_POST['mail'];
-  //              $user_address =$_POST['course'];
-  //              $role_id  =   $_POST['Role'];
-           
-           
-  //         $this->cus_control->update_account($name,$user_sex,$user_tel, $user_email,$user_address,$role_id );
- //      }
-   //     header('location: ?act=controller&xuli=update');
-  //  }    
-
-    public function update()
-        {
-            $id = $_POST['id'];
-            $data = array(
-                'name' =>    $_POST['firstname'],
-                'user_sex' => $_POST['GioiTinh'],
-                'user_tel' => $_POST['SDT'],
-                'user_email' =>    $_POST['mail'],
-                'user_address'  =>   $_POST['course'],
-                'role_id'  =>   $_POST['role'],
-
-           );
-           foreach ($data as $key => $value) {
-               if (strpos($value, "'") != false) {
-                   $value = str_replace("'", "\'", $value);
-                   $data[$key] = $value;
-               }
-            }
-            $this->cus_control->update($id,$data,$data2);
+ function update(){
+         $id=$_POST['user_id'] ;
             
-        }
+               $name =$_POST['firstname'];
+              $user_sex =$_POST['GioiTinh'];
+               $user_tel =$_POST['SDT'];
+              $user_email =$_POST['mail'];
+              $user_address =$_POST['course'];
+              
+             $role_id  =$_POST['Role'];
+
+
+           
+           
+           $this->cus_control->update_account($name,$user_sex,$user_tel, $user_email,$user_address,$role_id,$id );
+      }
+        header('location: ?act=controller&xuli=update');
+    }    
+
+    // public function update()
+    //    {
+    //        $id = $_POST['id'];
+    //         $data = array(
+    //            'name' =>    $_POST['firstname'],
+    //             'user_sex' => $_POST['GioiTinh'],
+    //   'user_tel' => $_POST['SDT'],
+    //             'user_email' =>    $_POST['mail'],
+    //             'user_address'  =>   $_POST['course'],
+    //             // 'role_id'  =>   $_POST['role'],
+                
+
+    //        );
+          
+
+    //        foreach ($data as $key => $value) {
+    //            if (strpos($value, "'") != false) {
+    //                $value = str_replace("'", "\'", $value);
+    //                $data[$key] = $value;
+    //            }
+    //         }
+    //         $this->cus_control->update($id,$data);
+            
+    //     }
        
 }
 
