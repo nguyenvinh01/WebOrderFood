@@ -51,11 +51,11 @@
               <div class="col-sm-9">
               <div class="field-form">
 											
-                      <select class="form-control" name="GioiTinh'" title="Giới tính">
-                        <option <?= ($data['user_sex'] == 'Nam') ? 'selected' : '' ?> value="Nam"> Nam</option>
-                        <option <?= ($data['user_sex'] == 'Nữ') ? 'selected' : '' ?> value="Nữ"> Nữ</option>
-                        <option <?= ($data['user_sex'] == 'Khác') ? 'selected' : '' ?> value="Khác"> Khác</option>
-                      </select>
+              <select class="form-control" name="GioiTinh" title="Giới tính">
+															<option <?= ($data['user_sex'] == 'Nam') ? 'selected' : '' ?> value="Nam"> Nam</option>
+															<option <?= ($data['user_sex'] == 'Nữ') ? 'selected' : '' ?> value="Nữ"> Nữ</option>
+															<option <?= ($data['user_sex'] == 'Khác') ? 'selected' : '' ?> value="Khác"> Khác</option>
+														</select>
                 
     </div>
               </div>

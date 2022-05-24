@@ -30,8 +30,9 @@ class customer extends Model
     
          $result = $this->conn->query($query);
             
-          
-      }
+        
+        }
+      
 
 
     //  function update($id,$data)

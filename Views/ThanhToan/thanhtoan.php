@@ -92,10 +92,28 @@
                                 </ul>
                                 <div class="checkout__order__total">Total <span><?= number_format($count);?> đ</span></div>
                                 <button type="submit" class="site-btn">PLACE ORDER</button>
+
+
+                                
                             </div>
                         </div>
                     </div>
                 </form>
+                <?php
+                # Include the Autoloader (see "Libraries" for install instructions)
+                require 'mailgun-php/vendor/autoload.php';
+               use Mailgun;
+                # Instantiate the client.
+                $mgClient = new Mailgun("014ba95a1bcd56e59c99f497198dc01f-5e7fba0f-3d486355");
+                $domain = "sandbox1b8782e5c6394c8c8fadae6829ac5b21.mailgun.org";
+                # Make the call to the client.
+                $result = $mgClient->sendMessage($domain, array(
+                    'from'	=> 'Excited User <mailgun@YOUR_DOMAIN_NAME>',
+                    'to'	=> 'Baz <YOU@YOUR_DOMAIN_NAME>',
+                    'subject' => 'Hello',
+                    'text'	=> 'Testing some Mailgun awesomness!'
+                ));
+                ?>
             </div>
         </div>
     </section>
