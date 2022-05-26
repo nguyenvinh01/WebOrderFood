@@ -100,19 +100,50 @@
                     </div>
                 </form>
                 <?php
-                # Include the Autoloader (see "Libraries" for install instructions)
-                require 'mailgun-php/vendor/autoload.php';
-               use Mailgun;
-                # Instantiate the client.
-                $mgClient = new Mailgun("014ba95a1bcd56e59c99f497198dc01f-5e7fba0f-3d486355");
-                $domain = "sandbox1b8782e5c6394c8c8fadae6829ac5b21.mailgun.org";
-                # Make the call to the client.
-                $result = $mgClient->sendMessage($domain, array(
-                    'from'	=> 'Excited User <mailgun@YOUR_DOMAIN_NAME>',
-                    'to'	=> 'Baz <YOU@YOUR_DOMAIN_NAME>',
-                    'subject' => 'Hello',
-                    'text'	=> 'Testing some Mailgun awesomness!'
-                ));
+            //     # Include the Autoloader (see "Libraries" for install instructions)
+            //     require 'mailgun-php/vendor/autoload.php';
+            //    use Mailgun\Mailgun;
+            //     # Instantiate the client.
+            //     $mgClient = new Mailgun("014ba95a1bcd56e59c99f497198dc01f-5e7fba0f-3d486355");
+            //     $domain = "sandbox1b8782e5c6394c8c8fadae6829ac5b21.mailgun.org";
+            //     # Make the call to the client.
+            //     $result = $mgClient->sendMessage($domain, array(
+            //         'from'	=> 'Excited User <mailgun@YOUR_DOMAIN_NAME>',
+            //         'to'	=> 'Baz <YOU@YOUR_DOMAIN_NAME>',
+            //         'subject' => 'Hello',
+            //         'text'	=> 'Testing some Mailgun awesomness!'
+            //     ));
+             
+//Composer's autoload file loads all necessary files
+
+require 'mailgun-php/vendor/autoload.php';
+$mail = new PHPMailer;
+
+$mail->isSMTP();  // Set mailer to use SMTP
+$mail->Host = 'smtp.mailgun.org';  // Specify mailgun SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = 'username@domain.com'; // SMTP username from https://mailgun.com/cp/domains
+$mail->Password = 'myp@55w0rd'; // SMTP password from https://mailgun.com/cp/domains
+$mail->SMTPSecure = 'tls';   // Enable encryption, 'ssl'
+
+$mail->From = 'sender@domain.com'; // The FROM field, the address sending the email 
+$mail->FromName = 'Orlie'; // The NAME field which will be displayed on arrival by the email client
+$mail->addAddress('recipient@domain.net', 'BOB');     // Recipient's email address and optionally a name to identify him
+$mail->isHTML(true);   // Set email to be sent as HTML, if you are planning on sending plain text email just set it to false
+
+// The following is self explanatory
+$mail->Subject = 'Email sent with Mailgun';
+$mail->Body    = '<span style="color: red">Mailgun rocks</span>, thank you <em>phpmailer</em> for making emailing easy using this <b>tool!</b>';
+$mail->AltBody = 'Mailgun rocks, shame you can\'t see the html sent with phpmailer so you\'re seeing this instead';
+
+if(!$mail->send()) {  
+    echo "Message hasn't been sent.";
+    echo 'Mailer Error: ' . $mail->ErrorInfo . "n";
+} else {
+    echo "Message has been sent  n";
+
+}
+
                 ?>
             </div>
         </div>
