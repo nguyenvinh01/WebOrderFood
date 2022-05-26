@@ -57,17 +57,18 @@
         <section class="maps">
             <div class="contact-in">
                
-                <!-- <div class="contact_form" >
+                <div class="contact_form" >
                     <form action="" id="myForm">
                         <input type="text" placeholder="Name" class="contact_form_txt" id="name">
                         <input type="text" placeholder="Email" class="contact_form_txt" id="email" >
-                        <input type="text" placeholder="subject" class="contact_form_txt" id="subject">
+                        <!-- <input type="text" placeholder="subject" class="contact_form_txt" id="subject"> -->
                         <textarea placeholder="Message" class="contact_form_area" id="body"></textarea>
-                         <input type="submit" name="Submit" class="contact_form_btn"  > 
+                          
                         <button  class="contact_form_btn" type="button" onclick="sendEmail()" value="Send An Email">Submit</button>
                     </form>
-                </div> -->
-        <form id="myForm">
+                </div>
+                
+        <!-- <form id="myForm">
 			<h2>Send an Email</h2>
 
 			<label>Name</label>
@@ -87,7 +88,7 @@
 			<br><br>
 
 			<button type="button" onclick="sendEmail()" value="Send An Email">Submit</button> 
-		</form>
+		</form> -->
 
                 <div class="contact_map">
                 <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%20phenikaa%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

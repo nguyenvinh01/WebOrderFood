@@ -31,10 +31,10 @@
 
         if ($mail->send()) {
             $status = "success";
-            $response = "Email is sent!";
+           $response = "Email is sent!";
         } else {
-            $status = "failed";
-            $response = "Something is wrong: <br><br>" . $mail->ErrorInfo;
+           $status = "failed";
+           $response = "Something is wrong: <br><br>" . $mail->ErrorInfo;
         }
 
         exit(json_encode(array("status" => $status, "response" => $response)));
