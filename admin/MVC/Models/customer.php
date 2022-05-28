@@ -21,41 +21,40 @@ class customer extends Model
        }
       
        
-      function update_account($data1,$data2,$data3,$data4,$data5,$data6,$data7)
-       {   
+    //   function update_account($data1,$data2,$data3,$data4,$data5,$data7)
+    //    {   
          
-           $query = "update tbl_user SET  name='$data1', user_sex='$data2', user_tel='$data3',user_email='$data4',user_address='$data5',
-        role_id=$data6 
-           where  user_id =$data7; ";
+    //        $query = "update tbl_user SET  name='$data1', user_sex='$data2', user_tel='$data3',user_email='$data4',user_address='$data5'
+    //        where  user_id =$data7; ";
     
-         $result = $this->conn->query($query);
+    //      $result = $this->conn->query($query);
             
         
-        }
+    //     }
       
 
 
-    //  function update($id,$data)
-    //   {
-    //      $v = "";
-    //      foreach ($data as $key => $value) {
-    //           $v .= $key . "='" . $value . "',";
-    //       }
-    //      $v = trim($v, ",");
+     function update($id,$data)
+      {
+         $v = "";
+         foreach ($data as $key => $value) {
+              $v .= $key . "='" . $value . "',";
+          }
+         $v = trim($v, ",");
   
   
-    //       $query = "UPDATE $this->table SET  $v   WHERE $this->contens = $id";
+          $query = "UPDATE $this->table SET  $v   WHERE $this->contens = $id";
           
   
-    //       $result = $this->conn->query($query);
+          $result = $this->conn->query($query);
           
-    //       if ($result == true) {
-    //           header("location: ?act=controller&xuli=join");
-    //       } else {
-    //           setcookie('msg', 'Update vào không thành công', time() + 2);
-    //         header("location: ?act=controller&xuli=update");
-    //       }
-    //   }
+          if ($result == true) {
+              header("location: ?act=controller&xuli=join");
+          } else {
+              setcookie('msg', 'Update vào không thành công', time() + 2);
+            header("location: ?act=controller&xuli=update");
+          }
+      }
     //   function find($id)
     //   {
     //       $query = "select * from $this->table where $this->contens =$id";

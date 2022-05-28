@@ -1,4 +1,4 @@
-    
+
     <section class="home">
         <div class="home_hinhnen">
             
@@ -54,47 +54,32 @@
                </div>
            </div>
         </section>
+       
         <section class="maps">
+
+               
+
             <div class="contact-in">
                
                 <div class="contact_form" >
-                    <form action="" id="myForm">
+                    <form action="" id="myForm" >
                         <input type="text" placeholder="Name" class="contact_form_txt" id="name">
                         <input type="text" placeholder="Email" class="contact_form_txt" id="email" >
-                        <!-- <input type="text" placeholder="subject" class="contact_form_txt" id="subject"> -->
+                        <input type="number" placeholder="Phone" class="contact_form_txt" id="subject"> 
                         <textarea placeholder="Message" class="contact_form_area" id="body"></textarea>
                           
-                        <button  class="contact_form_btn" type="button" onclick="sendEmail()" value="Send An Email">Submit</button>
+                        <button  class="contact_form_btn" id='button' name="submit" type="button" onclick="sendEmail()" ;
+                         value="Send An Email">Submit</button>
                     </form>
+                   
                 </div>
-                
-        <!-- <form id="myForm">
-			<h2>Send an Email</h2>
 
-			<label>Name</label>
-			<input id="name" type="text" placeholder="Enter Name">
-			<br><br>
-
-			<label>Email</label>
-			<input id="email" type="text" placeholder="Enter Email">
-			<br><br>
-
-			<label>Subject</label>
-			<input id="subject" type="text" placeholder=" Enter Subject"> 
-			<br><br>
-
-			<p>Message</p>
-			<textarea id="body" rows="5" placeholder="Type Message"></textarea>
-			<br><br>
-
-			<button type="button" onclick="sendEmail()" value="Send An Email">Submit</button> 
-		</form> -->
 
                 <div class="contact_map">
                 <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%20phenikaa%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                   <a href="https://www.online-timer.net"></a><br>
                   <style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style>
-                  <a href="https://www.embedgooglemap.net">wordpress add google map</a>
+                  <a href="https://www.embedgooglemap.net"></a>
                   <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
                 </div>
             </div>
@@ -108,7 +93,11 @@
 
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
+
+
+
         function sendEmail() {
+
             var name = $("#name");
             var email = $("#email");
             var subject = $("#subject");
@@ -129,17 +118,30 @@
                         $('.sent-notification').text("Message Sent Successfully.");
                    }
                 });
+                document.getElementById("myForm").reset();
             }
         }
 
         function isNotEmpty(caller) {
             if (caller.val() == "") {
-                caller.css('border', '1px solid red');
+                caller.css('border', '3px solid red');
                 return false;
             } else
                 caller.css('border', '');
 
             return true;
         }
+     
+    
     </script>
+  
+  <?php
 
+// $alert = '';
+// if(isset($_SESSION['submit'])){
+//     $alert = '<div class="alert-success">
+//                  <span>Message Sent! Thank you for contacting us.</span>
+//                 </div>';
+// }
+// echo $alert; 
+   ?>

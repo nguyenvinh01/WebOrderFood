@@ -22,8 +22,8 @@
                 nhà hàng nhỏ ở nhà nội. Sau 10 năm nó đã trở thành đế chế ẩm thực có mặt mọi nơi trên tổ quốc Việt Nam....
                 </div>
                 <div class="contact_btn">
-                    <button class="cm">thêm thông tin</button>
-                    <button class="cm">Liên hệ với chúng tôi</button>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button class="cm">thêm thông tin</button></a>
+                    <a href="?act=contact"> <button class="cm">Liên hệ với chúng tôi</button></a>
                 </div>
             </div>
             <div class="contact_right">
@@ -147,8 +147,8 @@
               <div class="item">
                 <div class="img-wrapper">
                     
-                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-9/52715509_618412685275325_4361882684608217088_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LFWjm6nL56MAX8uov8r&_nc_ht=scontent.fhan14-2.fna&oh=00_AT9uqThWloe53456MdpzsKU8LMd5QZLAxdcrORDuvf6-vQ&oe=62699591" alt="">
-                    <h2>nguyễn Đức hung</h2>
+                    <img src="https://cafefcdn.com/2019/4/7/photo-1-15546000948151579336019.jpg" alt="">
+                    <h2>Christine Hà</h2>
                     <ul>
                         <li><a href=""><i class="fab fa-github"></i></a></li>
                         <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -160,8 +160,8 @@
               </div>
               <div class="item">
                 <div class="img-wrapper">
-                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t31.18172-8/24059723_371828806600382_6307464704298468155_o.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_ohc=F26tPeZkRMoAX94HxPk&_nc_oc=AQmMDv7wUeSujzk6K14122QS8Tgd5zcbSGjDDtfGsTVNZG8wkKy8P6GHvMHL21ofz67MeY_0PddDRk-ph4oQjHFN&_nc_ht=scontent.fhan14-2.fna&oh=00_AT_3tD1U__F96C2SuREjkFCgSTuqvHHnMUR2R0aobmXmHQ&oe=626A1F54" alt="">
-                    <h2>nguyễn thành vinh</h2>
+                    <img src="https://yt3.ggpht.com/ytc/AKedOLTSYEvkKBZlSfMDZSEMfcT93a-OZTSXCtB20bGG_w=s900-c-k-c0x00ffffff-no-rj" alt="">
+                    <h2>Luke Nguyễn</h2>
                     <ul>
                         <li><a href=""><i class="fab fa-github"></i></a></li>
                         <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -172,8 +172,8 @@
               </div>
               <div class="item">
                 <div class="img-wrapper">
-                    <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-9/80099193_2555363314686626_5432664034895724544_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=0debeb&_nc_ohc=itTHkmg8lCUAX8UWwFx&_nc_ht=scontent.fhan14-2.fna&oh=00_AT-CB7oh4m4FRp-NjriLcTRdrnsbJjxB477Grjao5tcPGg&oe=6269F229" alt="">
-                    <h2> Nguyễn tuấn vinh</h2>
+                    <img src="https://dep.com.vn/Uploaded/binhminh/2015_09_21/deponliene-masterchef-pham-tuan-hai-1.jpg" alt="">
+                    <h2> Phạm Tuấn Hải</h2>
                     <ul>
                         <li><a href=""><i class="fab fa-github"></i></a></li>
                         <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -184,8 +184,8 @@
               </div>
               <div class="item">
                 <div class="img-wrapper">
-                    <img src="https://pyxis.nymag.com/v1/imgs/fca/40f/fc3dfab05a02ca1a80449c7dbf44b303c1-27-gordon-ramsay.rsquare.w330.jpg" alt="">
-                    <h2> nguyễn gô đen</h2>
+                    <img src="https://wp.foodion.net/en/wp-content/uploads/sites/3/2016/04/MG_1062.jpg" alt="">
+                    <h2> Shuzo Kishida</h2>
                     <ul>
                         <li><a href=""><i class="fab fa-github"></i></a></li>
                         <li><a href=""><i class="fab fa-instagram"></i></a></li>

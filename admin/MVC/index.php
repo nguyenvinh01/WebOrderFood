@@ -91,7 +91,7 @@ if(!isset($_SESSION['login'])){
             <li><a class="app-menu__item" href="?act=order"><i class='app-menu__icon bx bx-task'></i><span
                     class="app-menu__label">Quản lý đơn hàng</span></a></li>
             
-            <li><a class="app-menu__item" href="#"><i class='app-menu__icon bx bx-dollar'></i><span
+            <li><a class="app-menu__item" href="?act=gallery&xuli=show"><i class='app-menu__icon bx bx-dollar'></i><span
                     class="app-menu__label">Gallery</span></a></li>
                     <li><a class="app-menu__item" href="?act=tk&xuli=join"><i
                     class='app-menu__icon bx bx-pie-chart-alt-2'></i><span class="app-menu__label">Thống Kê</span></a>
@@ -218,8 +218,34 @@ if(!isset($_SESSION['login'])){
                         break;
                     }  
                 break;
-            default:
+            
+                case 'gallery':
+                    $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+                    switch($act) {
+                        case 'addcate':
+                            require_once('MVC/Views/gallery/add_galle.php');
+                            break;
+                        case 'show':
+                             require_once('MVC/Views/gallery/galle_list.php');
+                            // $controller->list();
+                            break;
+                        case 'add':
+                            $controller->galle();
+                            break;
+                        case 'edit':
+                            $controller->update();
+                            break;
+                        case 'update':
+                            require_once('MVC/Views/gallery/edit_galle.php');
+                            break;
+                        case 'delete':
+                            $controller->delete();
+                            break;
+                        }  
+                    break;
+                    default:
                 require_once('MVC/Views/Home/home.php');
+            
         }
     ?>
 

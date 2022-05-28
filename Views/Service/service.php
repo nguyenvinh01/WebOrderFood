@@ -47,7 +47,7 @@
                   <i class="fas fa-award"></i>
                 </div>
                 <h2 class="cuoicung_h2">
-                  sự uy tín
+                  Sự uy tín
                 </h2>
                 <div class="cuoicung_noidung">
                   với rất nhiều bằng chứng nhận trong nước lẫn nước . Chúng tôi tự tin bản thân sẽ đem lại trải tuyệt vời cho khách hàng
@@ -61,7 +61,7 @@
                 Đặt hàng online
               </h2>
               <div class="cuoicung_noidung">
-                nhanh, gọn và rẻ
+                Nhanh, gọn, rẻ đến ngay trong vòng 15 phút
               </div>
           </div>
           <div class="cuoicung_box">
@@ -69,7 +69,7 @@
               <i class="fas fa-hamburger"></i>
             </div>
             <h2 class="cuoicung_h2">
-              đảm bảo về chất
+              Đảm bảo về chất
             </h2>
             <div class="cuoicung_noidung">
               chúng tôi đảm bảo chất lượng trên từng cm đồ ăn

@@ -24,45 +24,45 @@ class CustommerController {
     function controller() {
         require_once('MVC/index.php');
     }
- function update(){
-    if (isset($_POST['submit'])) {
-               $id=$_POST['id'] ;
-               $name =$_POST['firstname'];
-               $user_sex =$_POST['GioiTinh'];
-               $user_tel =$_POST['SDT'];
-               $user_email =$_POST['mail'];
-               $user_address =$_POST['course'];
-               //$role_id  =   $_POST['role'];
+//  function update(){
+//     if (isset($_POST['submit'])) {
+//                $id=$_POST['id'] ;
+//                $name =$_POST['firstname'];
+//                $user_sex =$_POST['GioiTinh'];
+//                $user_tel =$_POST['SDT'];
+//                $user_email =$_POST['mail'];
+//                $user_address =$_POST['course'];
                
-               $role_id  =   1;
+               
+              
            
            
-          $this->cus_control->update_account($name,$user_sex,$user_tel, $user_email,$user_address,$role_id,$id );
-    }
-      // header('location: ?act=controller&xuli=update');
-   }    
+//           $this->cus_control->update_account($name,$user_sex,$user_tel, $user_email,$user_address,$id );
+//     }
+//        header('location: ?act=controller&xuli=update');
+//    }    
 
-    // public function update()
-    //     {
-    //         $id = $_POST['id'];
-    //         $data = array(
-    //             'name' =>    $_POST['firstname'],
-    //             'user_sex' => $_POST['GioiTinh'],
-    //             'user_tel' => $_POST['SDT'],
-    //             'user_email' =>    $_POST['mail'],
-    //             'user_address'  =>   $_POST['course'],
-    //             'role_id'  =>   $_POST['role'],
+    public function update()
+        {
+            $id = $_POST['id'];
+            $data = array(
+                'name' =>    $_POST['firstname'],
+                'user_sex' => $_POST['GioiTinh'],
+                'user_tel' => $_POST['SDT'],
+                'user_email' =>    $_POST['mail'],
+                'user_address'  =>   $_POST['course'],
+                
 
-    //        );
-    //        foreach ($data as $key => $value) {
-    //            if (strpos($value, "'") != false) {
-    //                $value = str_replace("'", "\'", $value);
-    //                $data[$key] = $value;
-    //            }
-    //         }
-    //         $this->cus_control->update($id,$data);
+           );
+           foreach ($data as $key => $value) {
+               if (strpos($value, "'") != false) {
+                   $value = str_replace("'", "\'", $value);
+                   $data[$key] = $value;
+               }
+            }
+            $this->cus_control->update($id,$data);
             
-    //     }
+        }
        
 }
 

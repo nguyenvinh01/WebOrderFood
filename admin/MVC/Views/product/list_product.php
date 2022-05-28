@@ -35,7 +35,6 @@
                                     <th>Tên sản phẩm</th>
                                     <th>Tình trạng</th>
                                     <th>Giá tiền</th>
-                                   
                                     <th>Chức năng</th>
                                 </tr>
                             </thead>

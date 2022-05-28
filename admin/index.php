@@ -147,6 +147,34 @@
                         break;
                     }  
                 break;
+                case 'gallery':
+                    $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+                    require_once('MVC/controller/GalleryController.php');
+                    $controller = new GalleryController();
+                    switch($act) {
+                        case 'addcate':
+                            // require_once('MVC/Views/gallery/add_cate.php');
+                            $controller->addcate();
+                            break;
+                        case 'show':
+                            //  require_once('MVC/Views/gallery/cate_list.php');
+                             $controller->list();
+                            break;
+                        case 'add':
+                            $controller->galle();
+                            break;
+                        case 'edit':
+                            $controller->update();
+                            break;
+                        case 'update':
+                            // require_once('MVC/Views/gallery/edit_cate.php');
+                            $controller->edit();
+                            break;
+                        case 'delete':
+                            $controller->delete();
+                            break;
+                        }  
+                    break;
         default:
             require_once('MVC/controller/HomeController.php');
                 $controller = new HomeController();

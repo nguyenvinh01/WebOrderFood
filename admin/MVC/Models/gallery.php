@@ -1,12 +1,12 @@
 <?php
 require_once("model.php");
 
-class category extends Model
+class gallery extends Model
 {
-    var $table = "tbl_category_product";
-    var $contens = "category_id";
-    function add_cate($data1,$data){
-        $query = "INSERT INTO tbl_category_product (category_name, category_desc) VALUES ('$data1','$data');";
+    var $table = "tbl_images";
+    var $contens = "id";
+    function add_galle($data){
+        $query = "INSERT INTO tbl_images (image_url) VALUES ('$data');";
 
         $status = $this->conn->query($query);
         if ($status == true) {
@@ -14,10 +14,10 @@ class category extends Model
         } else {
             setcookie('msg', 'Xóa không thành công', time() + 2);
         }
-        header("location: ?act=category&xuli=show");
+        header("location: ?act=gallery&xuli=show");
     }
     function list(){
-        $sql = 'SELECT * FROM tbl_category_product;';
+        $sql = 'SELECT * FROM tbl_images;';
         $rs = $this->conn->query($sql);
         $data = array();
         while($row = $rs->fetch_assoc()) {
@@ -40,10 +40,10 @@ class category extends Model
         $result = $this->conn->query($query);
         
         if ($result == true) {
-            header("location:  ?act=category&xuli=show");
+            header("location:  ?act=gallery&xuli=show");
         } else {
             setcookie('msg', 'Update vào không thành công', time() + 2);
-            header("location: ?act=category&xuli=update");
+            header("location: ?act=gallery&xuli=update");
         }
     }
     function find($id)
@@ -53,7 +53,7 @@ class category extends Model
     }
     function delete($id)
     {
-        $query = "DELETE from tbl_category_product where category_id = $id;";
+        $query = "DELETE from tbl_images where id = $id;";
         
         $status = $this->conn->query($query);
         if ($status == true) {
@@ -61,6 +61,6 @@ class category extends Model
         } else {
             setcookie('msg', 'Xóa không thành công', time() + 2);
         }
-        header("location: ?act=category&xuli=show");
+        header("location: ?act=gallery&xuli=show");
     }
 }

@@ -28,7 +28,7 @@ session_start();
                                 Là đặc sắc âm thực hà nội, bổ dưỡng dễ ăn đi cùng nước chấm đậm đà mà vẫn thanh tao   
                             </p>
                         </div>
-                        <a href="?act=menu" class="btn">order now</a>
+                        <a href="?act=detail&id=24&loai=1" class="btn">order now</a>
                     </div>
                     <!-- end item info -->
                     <!-- item image -->
@@ -55,7 +55,7 @@ session_start();
                              làm cho bát phở thêm ngon mắt
                             </p>
                         </div>
-                        <a href="?act=menu" class="btn">order now</a>
+                        <a href="?act=detail&id=25&loai=1" class="btn">order now</a>
                     </div>
                     <!-- end item info -->
                     <!-- item image -->
@@ -79,7 +79,7 @@ session_start();
                             Vốn là một hương vị Huế không lẫn vào đâu được và chính điều đó khiến người ăn cứ nhớ mãi về món ăn này.
                             </p>
                         </div>
-                        <a href="?act=menu" class="btn">order now</a>
+                        <a href="?act=detail&id=26&loai=1" class="btn">order now</a>
                     </div>
                     <!-- end item info -->
                     <!-- item image -->
@@ -130,7 +130,7 @@ session_start();
         <div class="menu0_diachi">
             PHENIKAA - UNI| (01) 66771508
         </div>
-        <div class="menu0_btn">TÌM HIỂU THÊM</div>
+        <a href="?act=about"><div class="menu0_btn">TÌM HIỂU THÊM</div></a>
     </div>
 </section>
 <section class="menu1">
@@ -198,7 +198,7 @@ session_start();
                         class="gird_img"
                     />
                     <div class="gird_monan">
-                        <h2 class="gird_mc"> đùi gà nướng ngũ vị</h2>
+                        <h2 class="gird_mc"> đùi gà chiên ngũ vị</h2>
                     </div>
                 </div>
                 <div class="today_girditem">
@@ -208,7 +208,7 @@ session_start();
                         class="gird_img"
                     />
                     <div class="gird_monan">
-                        <h2 class="gird_mc">Cá ngừ hầm </h2>
+                        <h2 class="gird_mc">Cá ngừ rán </h2>
                     </div>
                 </div>
                 <div class="today_girditem">
@@ -252,7 +252,8 @@ session_start();
                             <div class="price"><?= number_format($item['product_price']) ?></div>
                         </div>
 
-                        <a href="?act=cart&xuli=add&id=<?= $item['product_id'];?>" class="addcart">Add To Cart</a>
+                        <!-- <a href="?act=cart&xuli=add&id=<?= $item['product_id'];?>" class="addcart">Add To Cart</a> -->
+                        <a href="?act=detail&id=<?= $item['product_id'];?>&loai=<?= $item['category_id'];?>?>" class="addcart">Add To Cart</a>
                     </div>
                 </div>
             <?php } ?>
@@ -270,7 +271,8 @@ session_start();
                       khởi động ngày mới nào !!!
                 </div>
                 <div class="btn_giamgia">
-                    <a href=""> ORDER NOW</a>
+                    <a href="?act=detail&id=17&loai=1
+                    "> ORDER NOW</a>
                 </div>
             </div>
             <div class="thuhai_giamgia">
@@ -354,7 +356,7 @@ session_start();
         <div class="create_city">Ăn cùng nhau , lưu khoảnh khắc, nhân thêm vui </div>
         
         <div class="create_btn">
-            <a href="contact.html" class="create_a">  chụp ngay nào ~~~~</a>
+            <a href="?act=service" class="create_a">  chụp ngay nào ~~~~</a>
         </div>
     </div>
 </section>
