@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     require_once('Models/home.php');
     class HomeController {
         var $home_model;

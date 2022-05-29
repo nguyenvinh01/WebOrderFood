@@ -53,10 +53,8 @@
                                 <i class="fas fa-search"></i>
                             </span>
                             </div>
-                        <table class="table table-hover">
-
+                        <table class="table table-hover position: fixed;">
                             <tbody id="output">
-                                
                             </tbody>
                         </table>
                         <div class="filter__item">
@@ -92,12 +90,13 @@
 </div>
         </section>
         
-        <script type="text/javascript">
+<script type="text/javascript">
   $(document).ready(function(){
-    $("#search").keypress(function(){
+    $("#search").keyup(function(){
       $.ajax({
         type:'POST',
-        url:'search.php',
+        url:'?act=search',
+        // url:'Views/Menu/search.php',
         data:{
           name:$("#search").val(),
         },
@@ -105,6 +104,7 @@
           $("#output").html(data);
         }
       });
+
     });
   });
 </script>

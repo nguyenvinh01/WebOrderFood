@@ -1,5 +1,5 @@
 <?php
-    require_once("MVC/models/product.php");
+    require_once("MVC/Models/product.php");
     class ProductController {
         var $product_model;
         public function __construct()

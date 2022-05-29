@@ -13,9 +13,6 @@
                                     <th>Mã Đơn Hàng</th>
                                     <th>Giá Đơn Hàng</th>
                                     <th>Tình Trạng</th>
-                                    <!-- <th>Giá tiền</th>
-                                   
-                                    <th>Chức năng</th> -->
                                 </tr>
                             </thead>
                             <?php foreach($allProduct as $p) { ?>
@@ -63,8 +60,6 @@
 
     
 
-<!-- HTML !-->
-<!-- <button class="button-3" role="button">Button 3</button> -->
 
 <style>
 .button-3 {

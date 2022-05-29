@@ -1,5 +1,5 @@
 <?php
-    require_once("MVC/models/home.php");
+    require_once("MVC/Models/home.php");
     class HomeController {
         var $home_model;
         public function __construct()

@@ -1,5 +1,5 @@
 <?php
-    require_once("MVC/models/order.php");
+    require_once("MVC/Models/order.php");
     class OrderController {
         var $order_model;
         public function __construct() {

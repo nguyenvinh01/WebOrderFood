@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     require_once('Models/purchase.php');
     class PurchaseController {
         var $cart_model;

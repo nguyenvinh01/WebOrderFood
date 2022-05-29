@@ -1,4 +1,3 @@
-
 <?php
     session_start();
     $mod = isset($_GET['act']) ? $_GET['act'] : "home";
@@ -136,6 +135,24 @@
                     $controller->list();
                     break;
             }
+            break;
+            case 'pass':
+                $act = isset($_GET['xuli']) ? $_GET['xuli'] : "list";
+                require_once('Controller/InfoController.php');
+                $controller = new InfoController();
+                switch($act) {
+                    case 'update':
+                        $controller->changePass();
+                        break;
+                    default:
+                        $controller->show();
+                        break;
+                }
+                break;
+        case 'search':
+            require_once('Controller/MenuController.php');
+            $controller = new MenuController();
+            $controller->search();
             break;
         default:
             require_once('Controller/HomeController.php');

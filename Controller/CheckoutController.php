@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     require_once('Models/checkout.php');
     class CheckoutController {
         var $checkout_model;

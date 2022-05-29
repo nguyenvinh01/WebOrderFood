@@ -1,5 +1,5 @@
 <?php
-require_once("MVC/models/customer.php");
+require_once("MVC/Models/customer.php");
 class CustommerController {
     var $cus_control;
     public function __construct()

@@ -63,5 +63,16 @@
             }
             return $data;
         }
+        function search($name){
+            $sql = "SELECT * FROM tbl_product WHERE product_name LIKE '%".$_POST['name']."%' AND product_status = '1'";
+            $rs = $this->conn->query($sql);
+            if(mysqli_num_rows($rs)){
+                while($row = $rs->fetch_assoc()) {
+                    $data[] = $row;
+                }
+                return $data;
+            }
+            return;
+        }
     }
 ?>

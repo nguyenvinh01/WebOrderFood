@@ -1,5 +1,5 @@
 <?php
-    require_once("MVC/models/category.php");
+    require_once("MVC/Models/category.php");
     class CategoryController {
         var $cate_model;
         public function __construct()

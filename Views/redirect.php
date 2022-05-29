@@ -52,6 +52,9 @@
                     require_once('Purchase/purchaseDetail.php');
                     break;
             }
+        case 'pass':
+            require_once('Information/ChangePass.php');
+            break;
         // case 'puchaseDetail':
     }
 ?>

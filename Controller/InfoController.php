@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     require_once('Models/info.php');
     class InfoController {
         var $info_model;
@@ -31,6 +33,13 @@
         }
         header('location: ?act=info&xuli=join');
     }
+        function changePass(){
+            if (isset($_POST['submit'])) {
+                $oldpass = $_POST['oldpass'];
+                $newpass = $_POST['newpass'];
+                $this->info_model->changePass($newpass,$oldpass);
+                }
+        }
         }
     
 ?>

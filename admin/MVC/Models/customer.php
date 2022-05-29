@@ -20,20 +20,6 @@ class customer extends Model
            return $this->conn->query($query)->fetch_assoc();
        }
       
-       
-    //   function update_account($data1,$data2,$data3,$data4,$data5,$data7)
-    //    {   
-         
-    //        $query = "update tbl_user SET  name='$data1', user_sex='$data2', user_tel='$data3',user_email='$data4',user_address='$data5'
-    //        where  user_id =$data7; ";
-    
-    //      $result = $this->conn->query($query);
-            
-        
-    //     }
-      
-
-
      function update($id,$data)
       {
          $v = "";
@@ -55,12 +41,7 @@ class customer extends Model
             header("location: ?act=controller&xuli=update");
           }
       }
-    //   function find($id)
-    //   {
-    //       $query = "select * from $this->table where $this->contens =$id";
-    //       return $this->conn->query($query)->fetch_assoc();
-    //   }
-   
+
 } 
 
 ?>

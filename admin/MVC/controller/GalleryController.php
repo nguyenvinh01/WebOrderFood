@@ -1,5 +1,5 @@
 <?php
-    require_once("MVC/models/gallery.php");
+    require_once("MVC/Models/gallery.php");
     class GalleryController {
         var $galle_model;
         public function __construct()

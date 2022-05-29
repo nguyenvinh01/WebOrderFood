@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     require_once('Models/login.php');
     class LoginController {
         var $login_model;

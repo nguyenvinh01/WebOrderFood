@@ -1,5 +1,6 @@
 <?php
-    require_once("MVC/models/thongke.php");
+ob_start();
+    require_once("MVC/Models/thongke.php");
     class ThongkeController {
         var $tk_model;
         public function __construct()

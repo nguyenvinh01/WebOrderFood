@@ -13,10 +13,10 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="shoping__product">Products</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
+                                    <th class="shoping__product">Sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="shoping__cart__btns">
-                        <a href="?act=menu" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
+                        <a href="?act=menu" class="primary-btn cart-btn">Tiếp tục mua sắm</a>
                     </div>
                 </div>
                 
@@ -86,7 +86,7 @@
                                     $count += $value['ThanhTien'];
                                 }
                             ?>
-                            <li>Total <span><?= number_format($count) ?> đ</span></li>
+                            <li>Tổng tiền <span><?= number_format($count) ?> đ</span></li>
                         </ul>
                         <a href="?act=checkout&xuli=show" class="primary-btn">PROCEED TO CHECKOUT</a>
                     </div>

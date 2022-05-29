@@ -14,7 +14,7 @@
         <li><a href="?act=service">Gallery</a></li>
         <li><a href="?act=contact">Contact</a></li>
         <?php if(isset($_SESSION['login']['role_id']) && $_SESSION['login']['role_id'] == 1) { ?>
-            <li><a href="admin/?act=admin">Manager</a></li>
+            <li><a href="admin/?act=tk&xuli=join">Manager</a></li>
         <?php } ?>
     </ul>
 
@@ -43,7 +43,7 @@
                         <span class="material-icons icons-size"
                             >mode</span
                         >
-                        <a href="#">Đổi mật khẩu</a>
+                        <a href="?act=pass">Đổi mật khẩu</a>
                     </li>
                     <li>
                         <span class="material-icons icons-size"

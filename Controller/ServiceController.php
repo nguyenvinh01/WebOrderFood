@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     require_once('Models/service.php');
     class ServiceController {
         var $service_model;

@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     require_once('Models/register.php');
     class RegistationController {
         var $register_model;

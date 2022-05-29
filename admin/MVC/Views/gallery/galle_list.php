@@ -13,7 +13,7 @@
                         <div class="row element-button pl">
                             <div class="col-sm-2">
                               <a class="btn btn-add btn-sm" href="?act=gallery&xuli=addcate" title="Thêm DM"><i class="fas fa-plus"></i>
-                                Tạo danh mục mới</a>
+                                Tạo mới</a>
                             </div>
                           </div>
                         <table class="table table-hover table-bordered" id="sampleTable">

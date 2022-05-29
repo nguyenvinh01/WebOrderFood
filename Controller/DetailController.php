@@ -1,4 +1,6 @@
 <?php
+    ob_start();
+
     require_once('Models/detail.php');
     class DetailController {
         var $detail_model;
