@@ -19,7 +19,7 @@
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
         $mail->Username = "hung.nd19010060@st.phenikaa-uni.edu.vn"; //enter you email address
-        $mail->Password = 'lgblxknldaynbkji'; //enter you email password
+        $mail->Password = 'jlfoksipahonknar'; //enter you email password
         $mail->Port = 465;
         $mail->SMTPSecure = "ssl";
 
