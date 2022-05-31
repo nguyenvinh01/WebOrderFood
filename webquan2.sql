@@ -62,9 +62,9 @@ CREATE TABLE `tbl_category_product` (
 --
 
 INSERT INTO `tbl_category_product` (`category_id`, `category_name`, `category_desc`, `category_status`, `created_at`, `updated_at`) VALUES
-(1, 'Món Việt', 'Reprehenderit qui a dolor ratione omnis sunt voluptas laborum vero cupiditate ut vitae vitae', 3, NULL, NULL),
-(2, 'Món Thái', 'Eos sit quis distinctio iusto consequatur fugiat temporibus modi earum dignissimos est tempora illum iusto et optio aut possimus.', 2, NULL, NULL),
-(3, 'Món Trung', 'Hic sit asperiores unde est autem perspiciatis non iure at voluptas sint ipsum illum deleniti ratione est esse at.', 3, NULL, NULL),
+(1, 'Món Việt', 'Món Việt', 3, NULL, NULL),
+(2, 'Món Thái', 'Món Thái', 2, NULL, NULL),
+(3, 'Món Trung', 'Món Trung.', 3, NULL, NULL),
 (4, 'Đồ ăn nhẹ', 'Đồ ăn nhẹ', 0, NULL, NULL),
 (5, 'Đồ ăn nhẹ', 'Đồ ăn nhẹ', 4, NULL, NULL),
 (6, '123123', '123123', 0, NULL, NULL),
